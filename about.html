@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../styles.css" rel="stylesheet">
+        <script src="../script.js"></script>
+        <title>CaeSar50</title>
+        <link rel="shortcut icon" href="../images/favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <input type="checkbox" id="nav-check">
+                <div class="logo">
+                    <a id="logo" href="index.html"><img src="../images/logo.png" height="48px" alt="logo"></a>
+                    <h1 id="title">C<span id="ipher">ae</span>S<span id="ipher">ar</span>50</h1>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <i><img id="button" src="../images/button.png" width="24px" height="24px" alt=""></i>
+                  </label>
+                </div>
+                <div class="nav-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="encrypt.html">Encrypt</a></li>
+                    <li><a href="decrypt.html">Decrypt</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+                <div class="nav-menu-filler"></div>
+              </nav>
+        </header>
+
+        <main>
+            <!--ABOUT PAGE-->
+            <div class="container" id="about">
+                <h2>About C<span id="ipher">ae</span>S<span id="ipher">ar</span>50</h2>
+                <br>
+                <h3>Hello, World!</h3>
+                <p>This website is my final project for CS50x, the famous Harvard "Introduction to Computer Science" course.</p>
+                <p>This is CS50!</p>
+                <br>
+                <hr>
+                <br>
+                <h3>Caesar Cipher explained</h3>
+                <p>This website uses Caesar cipher to encrypt and decrypt your messages: one of the earliest and most widely known ciphers.</p>
+                <p>It is a simple form of a “substitution cipher” where you replace each letter of the alphabet with another letter by shifting the whole alphabet a certain number of letters. <br>
+                    This number is your <strong>key</strong>.</p>
+                <p id="example">For example: if your key is <strong>3</strong>, the alphabet would shift to the left 3 times. A would become D, M would be replaced by P, R by U, and so on.<br>
+                    And when you reach the end of the alphabet, your restart from the beginning. In our example, Z would become C!<br>
+                    <small>Before:<br>
+                    <strong id="blue">A</strong> B C D E F G H I J K L <strong id="green">M</strong> N O P Q <strong id="black">R</strong> S T U V W X Y <strong id="red">Z</strong><br>
+                    After:<br>
+                    <-- <strong id="blue">D</strong> E F G H I J K L M N O <strong id="green">P</strong> Q R S T <strong id="black">U</strong> V W X Y Z</small> A B <strong id="red">C</strong> ---
+                </p>
+                <br>
+                <hr>
+                <br>
+                <h3>Useful Links</h3>
+                <p>Harvard CS50x</p>
+                <a target="_blank" href="https://cs50.harvard.edu/x"><img src="../images/harvard.png" height="32px" alt="Harvard logo"></a>
+                <p>CS50x on EDX</p>
+                <a target="_blank" href="https://www.edx.org/course/cs50s-introduction-to-computer-science"><img src="../images/edx.png" height="32px" alt="EDX logo"></a>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footer_text">
+                &copy; 2020 LSK Final Project for CS50
+            </p>
+        </footer>
+    </body>
+
+</html>

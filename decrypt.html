@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../styles.css" rel="stylesheet">
+        <script src="../script.js"></script>
+        <title>CaeSar50</title>
+        <link rel="shortcut icon" href="../images/favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <input type="checkbox" id="nav-check">
+                <div class="logo">
+                    <a id="logo" href="index.html"><img src="../images/logo.png" height="48px" alt="logo"></a>
+                    <h1 id="title">C<span id="ipher">ae</span>S<span id="ipher">ar</span>50</h1>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <i><img id="button" src="../images/button.png" width="24px" height="24px" alt=""></i>
+                  </label>
+                </div>
+                <div class="nav-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="encrypt.html">Encrypt</a></li>
+                    <li><a href="decrypt.html">Decrypt</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+                <div class="nav-menu-filler"></div>
+              </nav>
+        </header>
+
+        <main>
+            <!--DECRYPT PAGE-->
+            <div class="container" id="decrypt">
+                <h2>...and to decrypt!</h2>
+                <p>Write your encrypted message <small>(ciphertext)</small>, select a key <small>(positive integer only)</small>, click on "Decrypt"... <br>
+                    <br>
+                    ...and voilà!<br>
+                    <br>
+                    Your message is decrypted <small>(plaintext)</small>.</p>
+                <form name="myform" id="container">
+                    <table id="container">
+                        <tr id="container">
+                            <td class="box">
+                                <textarea name="cipher_d" rows="5" cols="23" placeholder="Enter your encrypted message here..."></textarea>
+                            </td>
+                            <td class="box">
+                                <input type="number" min="0" step="1" oninput="validity.valid||(value='');" placeholder="...your key..." name="key_d" id="key_d">
+                                <input id="decrypt_button" type="button" value="Decrypt" onClick="decrypt();">
+                            </td>
+                            <td class="box">
+                                <textarea name="plain_d" rows="5" cols="23" placeholder="...and your decrypted message will appear here."></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footer_text">
+                &copy; 2020 LSK Final Project for CS50
+            </p>
+        </footer>
+    </body>
+
+</html>
